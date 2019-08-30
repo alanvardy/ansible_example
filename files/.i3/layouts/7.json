@@ -1,0 +1,70 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 482,
+       "width": 737,
+       "x": 0,
+       "y": 0
+    },
+    "name": "vardy@vardy-main: ~",
+    "percent": 0.333333333333333,
+    "swallows": [
+       {
+       "class": "^Gnome\\-terminal$"
+       // "instance": "^gnome\\-terminal\\-server$",
+       // "title": "^vardy\\@vardy\\-main\\:\\ \\~$",
+       // "window_role": "^gnome\\-terminal\\-window\\-b3b453e3\\-3441\\-4727\\-be1e\\-51cb0e3d4439$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 482,
+       "width": 737,
+       "x": 0,
+       "y": 0
+    },
+    "name": "i3-save-tree --workspace 7 > ~/.i3/7.json",
+    "percent": 0.333333333333333,
+    "swallows": [
+       {
+       "class": "^Gnome\\-terminal$"
+       // "instance": "^gnome\\-terminal\\-server$",
+       // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 7\\ \\>\\ \\~\\/\\.i3\\/7\\.json$",
+       // "window_role": "^gnome\\-terminal\\-window\\-c6e3e270\\-6ad1\\-4dd9\\-900c\\-7ea0426a4cd5$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 482,
+       "width": 737,
+       "x": 0,
+       "y": 0
+    },
+    "name": "vardy@vardy-main: ~",
+    "percent": 0.333333333333333,
+    "swallows": [
+       {
+       "class": "^Gnome\\-terminal$"
+       // "instance": "^gnome\\-terminal\\-server$",
+       // "title": "^vardy\\@vardy\\-main\\:\\ \\~$",
+       // "window_role": "^gnome\\-terminal\\-window\\-9ab7300a\\-aa7a\\-4add\\-8cf5\\-67c2c1d3fba8$"
+       }
+    ],
+    "type": "con"
+}
+

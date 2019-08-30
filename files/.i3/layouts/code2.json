@@ -1,0 +1,166 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.183333333333333,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 554,
+               "width": 892,
+               "x": 0,
+               "y": 0
+            },
+            "name": "vardy@vardy-main: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$"
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^vardy\\@vardy\\-main\\:\\ \\~$",
+               // "window_role": "^gnome\\-terminal\\-window\\-7f643247\\-4108\\-45a0\\-b93a\\-ce69bb7b819d$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 554,
+               "width": 892,
+               "x": 0,
+               "y": 0
+            },
+            "name": "vardy@vardy-main: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$"
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^vardy\\@vardy\\-main\\:\\ \\~$",
+               // "window_role": "^gnome\\-terminal\\-window\\-a7c3643c\\-416a\\-4497\\-8b4d\\-b13fc96080f2$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.633333333333333,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1048,
+               "width": 1901,
+               "x": 21,
+               "y": 1085
+            },
+            "name": "New Tab - Chromium",
+            "percent": 0.4,
+            "swallows": [
+               {
+               "class": "^Chromium$"
+               // "instance": "^chromium$",
+               // "title": "^New\\ Tab\\ \\-\\ Chromium$",
+               // "window_role": "^browser$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "none",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1263,
+               "width": 2287,
+               "x": 10,
+               "y": 861
+            },
+            "name": "settings.json - airtableapi - Visual Studio Code",
+            "percent": 0.6,
+            "swallows": [
+               {
+               "class": "^Code$"
+               // "instance": "^code$",
+               // "title": "^settings\\.json\\ \\-\\ airtableapi\\ \\-\\ Visual\\ Studio\\ Code$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.183333333333333,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 554,
+               "width": 892,
+               "x": 0,
+               "y": 0
+            },
+            "name": "i3-save-tree --workspace 7 > ~/.i3/gtd.json",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$"
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 7\\ \\>\\ \\~\\/\\.i3\\/gtd\\.json$",
+               // "window_role": "^gnome\\-terminal\\-window\\-9e735c52\\-b505\\-4209\\-b256\\-7f413cc1fa0a$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 554,
+               "width": 892,
+               "x": 0,
+               "y": 0
+            },
+            "name": "vardy@vardy-main: ~/coding/webdev/configbackup",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$"
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^vardy\\@vardy\\-main\\:\\ \\~\\/coding\\/webdev\\/configbackup$",
+               // "window_role": "^gnome\\-terminal\\-window\\-67fe1594\\-144f\\-45f6\\-9597\\-2cc1032f27f4$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

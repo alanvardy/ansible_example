@@ -1,0 +1,42 @@
+- name: Install dev languages (Manjaro)
+  hosts:
+    - manjaro
+
+  tasks:
+  - name: Add asdf to zshrc
+    shell: grep -qxF '. /home/vardy/.asdf/asdf.sh' /home/vardy/.zshrc || echo '\n. /home/vardy/.asdf/asdf.sh' >> /home/vardy/.zshrc
+
+  - name: Add asdf completions to zshrc
+    shell: grep -qxF '. /home/vardy/.asdf/completions/asdf.bash' /home/vardy/.zshrc || echo '\n. /home/vardy/.asdf/completions/asdf.bash' >> /home/vardy/.zshrc
+
+  - name: Add asdf to bashrc
+    shell: grep -qxF '. /home/vardy/.asdf/asdf.sh' /home/vardy/.bashrc || echo '\n. /home/vardy/.asdf/asdf.sh' >> /home/vardy/.bashrc
+
+  - name: Add asdf completions to bashrc
+    shell: grep -qxF '. /home/vardy/.asdf/completions/asdf.bash' /home/vardy/.bashrc || echo '\n. /home/vardy/.asdf/completions/asdf.bash' >> /home/vardy/.bashrc
+
+  - name: install asdf
+    command: git clone https://github.com/asdf-vm/asdf.git /home/vardy/.asdf
+    args:
+      creates: /home/vardy/.asdf/
+    register: asdf
+
+  - name: restart service if asdf installed
+    reboot:
+      reboot_timeout: 60
+    when: asdf.changed
+
+  # - name: install asdf ruby plugin
+  #   command: asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+  #   args:
+  #     creates: /home/vardy/.asdf/plugins/ruby/
+
+  # - name: install asdf erlang plugin
+  #   command: asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git
+  #   args:
+  #     creates: /home/vardy/.asdf/plugins/erlang/
+
+  # - name: install asdf elixir plugin
+  #   command: asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+  #   args:
+  #     creates: /home/vardy/.asdf/plugins/elixir/

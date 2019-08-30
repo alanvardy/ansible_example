@@ -1,0 +1,115 @@
+---
+######################
+##### BASE FILES #####
+######################
+
+- name: Install base files (Manjaro)
+  hosts:
+    - manjaro
+  become: yes
+  tasks:
+  - name: Copy .zshrc
+    copy:
+      src: ../files/.zshrc
+      dest: /home/vardy/.zshrc
+      force: yes
+
+  - name: Copy .bashrc
+    copy:
+      src: ../files/.bashrc
+      dest: /home/vardy/.bashrc
+      force: yes
+
+  - name: Copy backgrounds
+    copy:
+      src: ../files/backgrounds/
+      dest: /home/vardy/backgrounds/
+      directory_mode:
+
+  - name: Copy i3 config
+    copy:
+      src: ../files/.i3/
+      dest: /home/vardy/.i3/
+      directory_mode:
+      mode: 0777
+      force: yes
+
+  - name: Copy i3status.conf
+    copy:
+      src: ../files/.i3status.conf
+      dest: /home/vardy/.i3status.conf
+      force: yes
+
+  - name: Create albert directory if it does not exist
+    file:
+      path: /home/vardy/.config/albert/
+      state: directory
+      mode: '0777'
+
+  - name: Copy albert.conf
+    copy:
+      src: ../files/albert.conf
+      dest: /home/vardy/.config/albert/albert.conf
+      mode: '0777'
+      force: yes
+
+  - name: Create htpctransfer directory if it does not exist
+    file:
+      path: /home/vardy/htpctransfer/
+      state: directory
+      mode: '0777'
+
+  #####################
+  ##### DEV FILES #####
+  #####################
+
+- name: Install dev files (Manjaro)
+  hosts:
+    - dev
+  become: yes
+  tasks:
+  - name: Copy .tool-versions
+    copy:
+      src: ../files/.tool-versions
+      dest: /home/vardy/.tool-versions
+      mode: '0777'
+      force: yes
+
+  - name: Copy .default-gems
+    copy:
+      src: ../files/.default-gems
+      dest: /home/vardy/.default-gems
+      mode: '0777'
+      force: yes
+
+  - name: Copy .asdfrc
+    copy:
+      src: ../files/.asdfrc
+      dest: /home/vardy/.asdfrc
+      mode: '0777'
+      force: yes
+
+  - name: Copy VS Code snippets
+    copy:
+      src: ../files/snippets/
+      dest: /home/vardy/.config/Code/User/snippets/
+      mode: '0777'
+      directory_mode:
+      force: yes
+
+
+######################
+##### HTPC FILES #####
+######################
+
+
+- name: Transfer files to HTPC (Manjaro)
+  hosts:
+    - htpc
+  become: yes
+  tasks:
+  - name: Transfer files from htpctransfer to downloads on HTPC
+    copy:
+      src: /home/vardy/htpctransfer/
+      dest: /home/vardy/Downloads/
+      directory_mode:

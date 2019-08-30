@@ -1,0 +1,47 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 900,
+       "width": 1440,
+       "x": 1200,
+       "y": 630
+    },
+    "name": "Mailspring",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Mailspring$"
+       // "instance": "^mailspring$",
+       // "title": "^Mailspring$",
+       // "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 3,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 2159,
+       "width": 3839,
+       "x": 10,
+       "y": 10
+    },
+    "name": "i3: Layout saving in i3 - Chromium",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Chromium$"
+       // "instance": "^chromium$",
+       // "title": "^i3\\:\\ Layout\\ saving\\ in\\ i3\\ \\-\\ Chromium$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+

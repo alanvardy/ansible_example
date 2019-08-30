@@ -1,0 +1,14 @@
+rails
+solargraph
+reek
+debride
+fasterer
+rubocop
+rubocop-performance
+rubocop-rails
+bundler
+pry
+brakeman
+rubycritic
+sorbet
+sorbet-runtime

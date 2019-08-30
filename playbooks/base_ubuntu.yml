@@ -1,0 +1,20 @@
+---
+- name: Update (Ubuntu)
+  hosts:
+    - ubuntu
+  become: yes
+
+  tasks:
+    - name: Update all packages to the latest version
+      apt:
+        update_cache: yes
+        upgrade: dist
+      register: packages
+
+    - name: Autorenew letsencrypt
+      command: dokku letsencrypt:auto-renew
+
+    - name: restart service if apps updated
+      reboot:
+        reboot_timeout: 60
+      when: packages.changed

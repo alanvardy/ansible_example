@@ -1,0 +1,111 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 800,
+               "width": 1251,
+               "x": 1294,
+               "y": 680
+            },
+            "name": "GitKraken",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^GitKraken$"
+               // "instance": "^gitkraken$",
+               // "title": "^GitKraken$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1044,
+               "width": 1897,
+               "x": 1940,
+               "y": 1087
+            },
+            "name": "New Tab - Chromium",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Chromium$"
+               // "instance": "^chromium$",
+               // "title": "^New\\ Tab\\ \\-\\ Chromium$",
+               // "window_role": "^browser$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 2108,
+               "width": 1897,
+               "x": 1930,
+               "y": 13
+            },
+            "name": "Slack - Code and Effect",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Slack$"
+               // "instance": "^slack$",
+               // "title": "^Slack\\ \\-\\ Code\\ and\\ Effect$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 2108,
+               "width": 1897,
+               "x": 23,
+               "y": 23
+            },
+            "name": "New Tab - Chromium",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Chromium$"
+               // "instance": "^chromium$",
+               // "title": "^New\\ Tab\\ \\-\\ Chromium$",
+               // "window_role": "^browser$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

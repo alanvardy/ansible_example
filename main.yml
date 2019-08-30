@@ -1,0 +1,13 @@
+---
+# This file requires ansible and ansible-aur
+# ansible-playbook --ask-become-pass -i hosts main.yml
+
+- import_playbook: playbooks/setup_manjaro.yml
+- import_playbook: playbooks/base_manjaro.yml
+- import_playbook: playbooks/base_ubuntu.yml
+- import_playbook: playbooks/dev_manjaro.yml
+- import_playbook: playbooks/dev_languages.yml
+- import_playbook: playbooks/variables.yml
+- import_playbook: playbooks/files.yml
+# - import_playbook: playbooks/main_manjaro.yml
+- import_playbook: playbooks/cleanup_manjaro.yml

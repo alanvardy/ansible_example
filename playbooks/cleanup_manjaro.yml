@@ -1,0 +1,14 @@
+---
+- name: cleanup system (Manjaro)
+  hosts:
+    - manjaro
+
+  tasks:
+    - name: Remove aur_builder
+      user:
+        name: aur_builder
+        state: absent
+        remove: yes
+      become: yes
+      become_user: root
+      become_method: su

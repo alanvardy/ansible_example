@@ -1,0 +1,18 @@
+---
+#####################
+##### VARIABLES #####
+#####################
+
+- name: Install dev variables (Manjaro)
+  hosts:
+    - dev
+  become: yes
+  tasks:
+  - name: Set git username
+    command: git config --global user.name "Alan Vardy"
+
+  - name: Set git email
+    command: git config --global user.email alanvardy@gmail.com
+
+  - name: Set git editor
+    command: git config --global core.editor "code"

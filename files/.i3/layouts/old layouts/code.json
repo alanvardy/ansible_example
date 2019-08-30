@@ -1,0 +1,187 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 4 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.2,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 482,
+               "width": 737,
+               "x": 0,
+               "y": 0
+            },
+            "name": "vardy@vardy-main: ~",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$"
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^vardy\\@vardy\\-main\\:\\ \\~$",
+               // "window_role": "^gnome\\-terminal\\-window\\-92befa83\\-f75e\\-4a01\\-b7f2\\-bcf9681b888a$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 482,
+               "width": 737,
+               "x": 0,
+               "y": 0
+            },
+            "name": "i3-save-tree --workspace 1 > ~/.i3/code.json",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$"
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 1\\ \\>\\ \\~\\/\\.i3\\/code\\.json$",
+               // "window_role": "^gnome\\-terminal\\-window\\-15d08396\\-80e4\\-4795\\-95e9\\-d14e94233799$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 482,
+               "width": 737,
+               "x": 0,
+               "y": 0
+            },
+            "name": "vardy@vardy-main: ~",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$"
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^vardy\\@vardy\\-main\\:\\ \\~$",
+               // "window_role": "^gnome\\-terminal\\-window\\-b5aa180c\\-9153\\-445f\\-be5c\\-90520b21cce4$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 482,
+               "width": 737,
+               "x": 0,
+               "y": 0
+            },
+            "name": "vardy@vardy-main: ~",
+            "percent": 0.25,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$"
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "title": "^vardy\\@vardy\\-main\\:\\ \\~$",
+               // "window_role": "^gnome\\-terminal\\-window\\-da672d35\\-21ed\\-438a\\-a737\\-4ecef4524690$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.8,
+    "type": "con",
+    "nodes": [
+        {
+            // splith split container with 2 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splith",
+            "percent": 0.4,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 3,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 2108,
+                       "width": 1897,
+                       "x": 23,
+                       "y": 23
+                    },
+                    "name": "New Tab - Chromium",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Chromium$"
+                       // "instance": "^chromium$",
+                       // "title": "^New\\ Tab\\ \\-\\ Chromium$",
+                       // "window_role": "^browser$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 3,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 831,
+                       "width": 3049,
+                       "x": 788,
+                       "y": 23
+                    },
+                    "name": "New Tab - Chromium",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Chromium$"
+                       // "instance": "^chromium$",
+                       // "title": "^New\\ Tab\\ \\-\\ Chromium$",
+                       // "window_role": "^browser$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "none",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 2134,
+               "width": 3840,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Welcome - Visual Studio Code",
+            "percent": 0.6,
+            "swallows": [
+               {
+               "class": "^Code$"
+               // "instance": "^code$",
+               // "title": "^Welcome\\ \\-\\ Visual\\ Studio\\ Code$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

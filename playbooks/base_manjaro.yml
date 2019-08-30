@@ -1,0 +1,182 @@
+---
+- name: Update (Manjaro)
+  hosts:
+    - manjaro
+  become: yes
+
+  tasks:
+    - name: full system upgrade
+      pacman:
+        update_cache: yes
+        upgrade: yes
+
+- name: Install base programs (Manjaro)
+  hosts:
+    - manjaro
+  become: yes
+
+  tasks:
+  - name: Remove palemoon-bin
+    pacman:
+      name: palemoon-bin
+      state: absent
+      extra_args: --recursive
+
+  - name: Install gnome-screenshot
+    pacman:
+      name: gnome-screenshot
+      state: present
+
+  - name: Install flameshot
+    pacman:
+      name: flameshot
+      state: present
+
+  - name: Install ansible
+    pacman:
+      name: ansible
+      state: present
+
+  - name: Install numlockx
+    pacman:
+      name: numlockx
+      state: present
+
+  - name: Install autojump
+    pacman:
+      name: autojump
+      state: present
+
+  - name: Install mpv
+    pacman:
+      name: mpv
+      state: present
+
+  - name: Install transmission-gtk
+    pacman:
+      name: transmission-gtk
+      state: present
+
+  - name: Install xfce4-pulseaudio-plugin
+    pacman:
+      name: xfce4-pulseaudio-plugin
+      state: present
+
+  - name: Install pulseaudio-equalizer-ladspa
+    pacman:
+      name: pulseaudio-equalizer-ladspa
+      state: present
+
+  - name: Install pulseaudio-bluetooth
+    pacman:
+      name: pulseaudio-bluetooth
+      state: present
+
+  - name: Install pulseaudio-alsa
+    pacman:
+      name: pulseaudio-alsa
+      state: present
+
+  - name: Install pulseaudio
+    pacman:
+      name: pulseaudio
+      state: present
+
+  - name: Install breeze-icons
+    pacman:
+      name: breeze-icons
+      state: present
+
+  - name: Install galculator
+    pacman:
+      name: galculator
+      state: present
+
+  - name: Install okular
+    pacman:
+      name: okular
+      state: present
+
+  - name: Install perl-anyevent-i3
+    pacman:
+      name: perl-anyevent-i3
+      state: present
+
+  - name: Remove powerline-fonts-git
+    pacman:
+      name: powerline-fonts-git
+      state: absent
+      extra_args: --recursive
+
+  - name: Install powerline-fonts
+    pacman:
+      name: powerline-fonts
+      state: present
+
+  - name: Install postgresql
+    pacman:
+      name: postgresql
+      state: present
+
+  - name: Install postgresql-libs
+    pacman:
+      name: postgresql-libs
+      state: present
+
+  - name: Install python-pip
+    pacman:
+      name: python-pip
+      state: present
+
+  - name: Install gnome-terminal
+    pacman:
+      name: gnome-terminal
+      state: present
+
+  - name: Install chromium
+    pacman:
+      name: chromium
+      state: present
+
+  - name: Install pavucontrol
+    pacman:
+      name: pavucontrol
+      state: present
+
+  - name: Install albert
+    pacman:
+      name: albert
+      state: present
+
+  - name: AUR upgrade
+    become: yes
+    become_user: aur_builder
+    aur:
+      upgrade: yes
+
+  - name: install yay
+    become: yes
+    become_user: aur_builder
+    aur:
+      use: makepkg
+      skip_installed: true
+      name:
+        - yay
+
+  - name: install spotify
+    become: yes
+    become_user: aur_builder
+    aur:
+      use: yay
+      skip_installed: true
+      name:
+        - spotify
+
+  - name: install ansible-aur
+    become: yes
+    become_user: aur_builder
+    aur:
+      use: yay
+      skip_installed: true
+      name:
+        - ansible-aur

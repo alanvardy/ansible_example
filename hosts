@@ -1,0 +1,20 @@
+[manjaro]
+main ansible_host=192.168.1.15
+xps13 ansible_host=192.168.1.11
+htpc ansible_host=192.168.1.14
+
+[ubuntu]
+vardycodes ansible_host=111.111.111.111 ansible_user=root
+
+[dev]
+main ansible_host=192.168.1.15
+xps13 ansible_host=192.168.1.11
+
+[htpc]
+htpc ansible_host=192.168.1.14
+
+[main]
+main ansible_host=192.168.1.15
+
+[localhost]
+localhost ansible_connection=local

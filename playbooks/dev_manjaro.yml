@@ -1,0 +1,162 @@
+- name: Install dev programs (Manjaro)
+  hosts:
+    - dev
+  become: yes
+
+  tasks:
+  - name: Uninstall exercism-cli
+    pacman:
+      name: exercism-cli
+      state: absent
+
+  - name: Install unzip
+    pacman:
+      name: unzip
+      state: present
+
+  - name: Install libmagick6
+    pacman:
+      name: libmagick6
+      state: present
+
+  - name: Install firefox-developer-edition
+    pacman:
+      name: firefox-developer-edition
+      state: present
+
+  - name: Install frei0r-plugins
+    pacman:
+      name: frei0r-plugins
+      state: present
+
+  - name: Install kdenlive
+    pacman:
+      name: kdenlive
+      state: present
+
+  - name: Install obs-studio
+    pacman:
+      name: obs-studio
+      state: present
+
+  - name: Install npm
+    pacman:
+      name: npm
+      state: present
+
+  - name: Install net-tools
+    pacman:
+      name: net-tools
+      state: present
+
+  - name: Install inotify-tools
+    pacman:
+      name: inotify-tools
+      state: present
+
+  - name: Install yarn
+    pacman:
+      name: yarn
+      state: present
+
+  - name: Install redis
+    pacman:
+      name: redis
+      state: present
+
+  - name: Install xorg-server-xvfb
+    pacman:
+      name: xorg-server-xvfb
+      state: present
+
+  - name: Install pinta
+    pacman:
+      name: pinta
+      state: present
+
+  ###############
+  ### SYSTEMD ###
+  ###############
+
+  - name: enable service redis
+    systemd:
+      name: redis
+      state: started
+      enabled: yes
+
+  ###############
+  ##### PIP #####
+  ###############
+
+  - name: Install git-sweep
+    pip:
+      name: git-sweep
+
+  ###############
+  ##### NPM #####
+  ###############
+
+  - name: Install git-removed-branches
+    npm:
+      name: git-removed-branches
+      global: yes
+      state: present
+
+  ###########
+  ### AUR ###
+  ###########
+
+  - name: install ngrok
+    become: yes
+    become_user: aur_builder
+    aur:
+      use: makepkg
+      skip_installed: true
+      name:
+        - ngrok
+
+  - name: install visual-studio-code-bin
+    become: yes
+    become_user: aur_builder
+    aur:
+      use: makepkg
+      skip_installed: true
+      name:
+        - visual-studio-code-bin
+
+  - name: install heroku-cli
+    become: yes
+    become_user: aur_builder
+    aur:
+      use: makepkg
+      skip_installed: true
+      name:
+        - heroku-cli
+
+  - name: install exercism-bin
+    become: yes
+    become_user: aur_builder
+    aur:
+      use: makepkg
+      skip_installed: true
+      name:
+        - exercism-bin
+
+  - name: install bfg
+    become: yes
+    become_user: aur_builder
+    aur:
+      use: makepkg
+      skip_installed: true
+      name:
+        - bfg
+
+  - name: install gitkraken
+    become: yes
+    become_user: aur_builder
+    aur:
+      use: makepkg
+      skip_installed: true
+      name:
+        - gitkraken
+

@@ -1,0 +1,99 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            // splitv split container with 1 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 1,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 1048,
+                       "width": 1901,
+                       "x": 1928,
+                       "y": 1075
+                    },
+                    "name": "New Tab - Chromium",
+                    "percent": null,
+                    "swallows": [
+                       {
+                       "class": "^Chromium$"
+                       // "instance": "^chromium$",
+                       // "title": "^New\\ Tab\\ \\-\\ Chromium$",
+                       // "window_role": "^browser$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1048,
+               "width": 3818,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Mailspring · Secrets of Happiness from the Oldest of the Old. How to Change Without Willpower. A Holiday Mystery.",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Mailspring$"
+               // "instance": "^mailspring$",
+               // "title": "^Mailspring\\ ·\\ Secrets\\ of\\ Happiness\\ from\\ the\\ Oldest\\ of\\ the\\ Old\\.\\ How\\ to\\ Change\\ Without\\ Willpower\\.\\ A\\ Holiday\\ Mystery\\.$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splitv split container with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 3,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 688,
+               "width": 2412,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Slack - Dev Edmonton Society",
+            "percent": 1,
+            "swallows": [
+               {
+               "class": "^Slack$"
+               // "instance": "^slack$",
+               // "title": "^Slack\\ \\-\\ Dev\\ Edmonton\\ Society$",
+               // "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

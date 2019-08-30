@@ -1,0 +1,7 @@
+- name: Run server backups
+  hosts:
+    - main
+
+  tasks:
+    - name: Backup database Dokku folder
+      shell: rsync -azP --delete root@111.111.111.111:/home/dokku ~/Downloads/
